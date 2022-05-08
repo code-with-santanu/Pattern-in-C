@@ -1,8 +1,8 @@
-/*   x   y   x
-	  x  y  x
-	   x y x
-		xyx
-		 y
+/*  x   y   x
+	 x  y  x
+	  x y x
+	   xyx
+		y
 */
 
 #include <stdio.h>
