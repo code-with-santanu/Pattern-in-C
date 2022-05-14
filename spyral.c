@@ -1,12 +1,11 @@
 #include <stdio.h>
-#include "Print.c"
 
 int posx = 0, posy = 0, dir = 0;
 
-void FillArray(int arr[]);
-void NullSpyral(int array[5][5]);
-void Print2D(int array[5][5]);
+void NullSpyral(int array[][]);
+void Print2D(int array[][]);
 void NewPos(int array[][], int, int);
+void SpiralFill(int array[][], int, int);
 
 int main()
 {
@@ -19,16 +18,6 @@ int main()
 	Print2D(array);
 
 	return 0;
-}
-
-void FillArray(int arr[])
-{
-	int n = 1, i;
-	for (i = 0; i <= 24; i++)
-	{
-		arr[i] = n;
-		n++;
-	}
 }
 
 void NullSpyral(int array[5][5])
