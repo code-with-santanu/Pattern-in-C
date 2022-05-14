@@ -1,8 +1,8 @@
-/* 5    5   5   5   5
-   4    4   4   4
-   3    3   3
-   2    2
-   1
+/* 5
+   4    5
+   3    4   5
+   2    3   4   5
+   1    2   3   4   5
 */
 
 #include <stdio.h>
@@ -15,9 +15,9 @@ int main()
 
     for (i = row; i >= 1; i--)
     {
-        for (j = i; j >= 1; j--)
+        for (j = i; j <= row; j++)
         {
-            printf("%d\t", i);
+            printf("%d\t", j);
         }
         printf("\n");
     }

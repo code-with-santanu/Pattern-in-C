@@ -1,7 +1,8 @@
-//         *
-//      *  *  *
-//   *  *  *  *  *
-//*  *  *  *  *  *  *
+/*          1
+        1   2
+    1   2   3
+1   2   3   4
+*/
 
 #include <stdio.h>
 
@@ -17,9 +18,9 @@ int main()
         {
             printf(" \t");
         }
-        for (k = 1; k <= (2 * i) - 1; k++)
+        for (k = 1; k <= i; k++)
         {
-            printf("*\t");
+            printf("%d\t", k);
         }
         printf("\n");
     }

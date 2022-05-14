@@ -1,6 +1,9 @@
-//   *
-//   *  *   *
-//   *  *   *   *   *
+/* 5
+   4    4
+   3    3   3
+   2    2   2   2
+   1    1   1   1   1
+*/
 
 #include <stdio.h>
 
@@ -10,11 +13,11 @@ int main()
     printf("\nEnter the no of rows: ");
     scanf("%d", &row);
 
-    for (i = 1; i <= row; i++)
+    for (i = row; i >= 1; i--)
     {
-        for (j = 1; j <= (2 * i) - 1; j++)
+        for (j = 0; j <= (row - i); j++)
         {
-            printf("*\t");
+            printf("%d\t", i);
         }
         printf("\n");
     }

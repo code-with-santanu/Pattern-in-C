@@ -1,8 +1,8 @@
-/* 5
-   4    4
-   3    3   3
+/* 1    1   1   1   1
    2    2   2   2
-   1    1   1   1   1
+   3    3   3
+   4    4
+   5
 */
 
 #include <stdio.h>
@@ -13,7 +13,7 @@ int main()
     printf("\nEnter the no of rows: ");
     scanf("%d", &row);
 
-    for (i = row; i >= 1; i--)
+    for (i = 1; i <= row; i++)
     {
         for (j = 0; j <= (row - i); j++)
         {

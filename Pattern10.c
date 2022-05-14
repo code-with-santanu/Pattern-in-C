@@ -1,8 +1,8 @@
-/*  A
-    A       B
-    A       B       C
-    A       B       C       D
-    A       B       C       D       E
+/* 1
+   0    1
+   1    0   1
+   0    1   0   1
+   1    0   1   0   1
 */
 
 #include <stdio.h>
@@ -15,9 +15,16 @@ int main()
 
     for (i = 1; i <= row; i++)
     {
-        for (j = 0; j < i; j++)
+        for (j = 1; j <= i; j++)
         {
-            printf("%c\t", j + 65);
+            if (i % 2 == 0)
+            {
+                printf("%d\t", (j + 1) % 2);
+            }
+            else
+            {
+                printf("%d\t", j % 2);
+            }
         }
         printf("\n");
     }

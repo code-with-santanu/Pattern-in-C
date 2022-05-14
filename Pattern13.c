@@ -1,31 +1,26 @@
-/*          5
-          4 5 4
-        3 4 5 4 3
-      2 3 4 5 4 3 2
-    1 2 3 4 5 4 3 2 1
-*/
+//      *
+//     * *
+//    * * *
+//   * * * *
+//  * * * * *
 
 #include <stdio.h>
 
 int main()
 {
-    int i, j, k, row;
-    printf("\nEnter the no of rows: ");
+    int row, i, j;
+    printf("\n enter no of row:");
     scanf("%d", &row);
 
-    for (i = row; i >= 1; i--)
+    for (i = 1; i <= row; i++)
     {
-        for (j = 1; j <= (i - 1); j++)
+        for (j = 1; j <= row - i; j++)
         {
             printf("  ");
         }
-        for (j = i; j <= row; j++)
+        for (j = 1; j <= i; j++)
         {
-            printf("%d ", j);
-        }
-        for (k = row - 1; k >= i; k--)
-        {
-            printf("%d ", k);
+            printf("* ");
         }
         printf("\n");
     }
